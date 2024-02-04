@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoginForm</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/loginForm.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="">
+      <div class="inputDiv">
+        <label for="name" class="username">UserName</label>
+        <div class="UserArea">
+          <i class="fa-solid fa-user"></i> <input type="text" name="name" id="name" placeholder="Type Your UserName">
+        </div>
+        <hr>
+      </div>
+      <div class="inputDiv">
+        <label for="password" class="username">PassWord</label>
+        <div class="UserArea">
+          <i class="fa-solid fa-key"></i> <input type="password" id="password " name="password"
+            placeholder="Type Your PassWord">
+        </div>
+        <hr>
+      </div>
+      <span class="forgotPassWord">ForgotPassWord?</span>
+      <button class="btn">Login</button>
+      <div class="formBottom">
+        <p>Or Sign Up using</p>
+        <ul class="flexUl">
+          <a href="">
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+          </a>
+          <a href="">
+            <li><i class="fa-brands fa-twitter"></i></li>
+          </a>
+          <a href="">
+            <li><i class="fa-brands fa-google"></i></li>
+          </a>
+        </ul>
+        <p class="signUp">Or Sign Up using</p>
+        <p id="signUpp">SIGN UP</p>
+      </div>
+    </form>
+    </div>
+</body>
+
+</html>

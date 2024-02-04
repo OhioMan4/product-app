@@ -1,0 +1,109 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color:lightgreen;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.container{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: .5rem;
+  padding:1rem 3rem;
+}
+.container form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.container  h2{
+  font-size: 1.5rem;
+  margin:2rem;
+}
+.container form input{
+  border:none;
+  font-size: 1rem;
+}
+input:focus{
+  outline:none;
+}
+.container form .userName{
+  margin-bottom:.7rem;
+}
+.container form i{
+  font-size: 1rem;
+}
+.userArea{
+  margin-bottom:.7rem;
+}
+.container form .inputDiv{
+  margin-bottom: .7rem;
+}
+.container form .UserArea{
+  margin-top:.7rem;
+  margin-bottom:.5rem;
+}
+.container form .fa-solid{
+  margin-right:.5rem;
+}
+.bottom{
+  display:flex;
+  flex-direction: column;
+  margin-top:4rem;
+  align-items: center;
+}
+.list{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  padding: 10px;
+}
+.list li{
+  padding: 5px;
+}
+.list li i{
+  height: 35px;
+  width:35px;
+  color:white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-facebook-f{
+  background-color: darkblue;
+}
+.fa-twitter{
+  background-color:blue;
+}
+.fa-google{
+  background-color: red;
+}
+.container form .forgotPassWord{
+  position: absolute;
+  right: 0rem;
+  font-size: 0.8rem;
+  top:9rem;
+  color: gray;
+}
+.btn{
+  margin-top:3rem;
+  padding:10px;
+  border-radius:50px;
+  background-color: #e65b00;
+  color:white;
+  border: 1px solid;
+  cursor: pointer;
+}

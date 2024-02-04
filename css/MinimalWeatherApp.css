@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background-color: rgb(174, 109, 235);
+  display :flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container{
+  font-size:1rem;
+  background-color: white;
+  border-radius: 10px;
+  height: 400px;
+  background-color: #232931;
+}
+.left-info{
+  display: flex;
+  width: 260px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  float:left;
+  background:url('backgroud.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 0 0 20px -10px rrgba(0, 0, 0, 0.2);
+  transform: scale(1.03) perspective(200px);
+  transition: all 0.3s ease;
+}
+.pic-gradient{
+   opacity: 0.5 ;
+   background: linear-gradient(135deg, #5c6bc0 10%, #0d47a1 100%);
+   height: 100%;
+   width: 100%;
+   top:0;
+   left:0;
+   border-radius: 25px;
+   position: absolute;
+}
+.left-info:hover{
+   transform: scale(1.1) perspective(2500px) rotateY(5deg);
+}
+.today-info{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-top: 25px;
+  color:white;
+  top :0;
+}
+.today-weather{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 25px;
+  left:25px;
+  justify-content: flex-start;
+  color:white;
+  font-weight: 900;
+}
+.today-weather .bx{
+  font-size: 4.6rem;
+}
+.weather-temp{
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.right-info{
+  position: relative;
+  height: 100%;
+  padding-top: 25px;
+  float: right;
+}
+.day-info{
+  padding:25px 35px;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  font-weight: 700;
+}
+.day-info div:not(:last-child){
+  margin-bottom: 6px;
+}
+.day-info div.title{
+  font-weight: 700;
+}
+.day-info .value{
+   float:right;
+}
+.day-list{
+  display: flex;
+  list-style: none;
+  margin: 10px 35px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  background-color:#232931;
+}
+.day-list li{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding :15px;
+  cursor: pointer;
+  color:white;
+  transition: all 1s;
+}
+.day-list li .bx{
+  font-size: 2rem;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:40px auto;
+  flex-direction: column;
+}
+.loc-button{
+  padding:10px 80px;
+  border-radius: 25px;
+  background-color: #0d47a1;
+  color:white;
+}
+.loc-button:hover{
+  background-color:#232931;
+  color:blue;
+}
+.day-list li:hover{
+  background-color: white;
+  color:black;
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;;
+}
+
+
+
+
